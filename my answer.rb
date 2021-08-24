@@ -9,3 +9,6 @@ class FibonacciSequence
          end
     end
 end
+
+number = FibonacciSequence.new
+p number.fibonacci_item 20
