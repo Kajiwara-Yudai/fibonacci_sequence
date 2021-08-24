@@ -11,4 +11,4 @@ class FibonacciSequence
 end
 
 number = FibonacciSequence.new
-p number.fibonacci_item 20
+p number.fibonacci_item 30
