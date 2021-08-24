@@ -1,11 +1,16 @@
 class FibonacciSequence
-    def fibonacci_item(n)
-       if n == 0 
-         0
-       elsif n == 1
-         1
-       else
-         fibonacci_item(n - 1) + fibonacci_item(n - 2)
-         end
+    def initialize
+        @a = 0; @b = 1
+        end
+    def next 
+        @a, @b = @b, @a + @b
+        return @a
     end
+end
+fibonacci = FibonacciSequence.new
+
+loop do 
+    i = fibonacci.next()
+    break if i > 100
+    puts i
 end
