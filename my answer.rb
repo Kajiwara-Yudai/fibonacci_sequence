@@ -5,7 +5,7 @@ class FibonacciSequence
     elsif n == 1
       return 1
     else
-      fibonacci_item(n + 1) + fibonacci_item(n)
+      fibonacci_item[n - 2] + fibonacci_item[n - 1]
       end
   end
 end
